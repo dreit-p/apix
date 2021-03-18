@@ -1,0 +1,21 @@
+@import './fonts.css';
+@import 'normalize.css';
+@import './common.scss';
+
+
+/*==================================
+=            components            =
+==================================*/
+
+@import './components/header/header.scss';
+@import './components/footer/footer.scss';
+
+
+/*----------  UI Elems  ----------*/
+
+@import './components/ui-elems/buttons.scss';
+@import './components/ui-elems/inputs.scss';
+
+
+
+/*=====  End of components  ======*/

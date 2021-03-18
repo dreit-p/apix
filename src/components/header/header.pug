@@ -1,0 +1,41 @@
+-
+	var links = [
+		{
+			name: "Главная",
+			url: "#our-team"
+		},
+		{
+			name: "Преимущества",
+			url: "#open-form"
+		},
+		{
+			name: "Функционал",
+			url: "#services"
+		},
+		{
+			name: "Кабинет",
+			url: "#contacts"
+		},
+	]
+
+.header-offset
+header.main-header
+	.limit
+		.logo
+			a.img
+				img(src="../assets/images/logo.svg")
+		.inline.middle
+			nav.links
+				each link in links
+					a.link(href=link.url)!= link.name
+
+		.menu-btn
+			.action.hamburger(data-open-modal="menu-modal")
+			.action.cross(onclick="closeModals()")
+			.overflow
+				.lines
+					.line
+					.line
+					.line
+
+
