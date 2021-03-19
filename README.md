@@ -1,4 +1,4 @@
-# Frontend part of [apix.trade](apix.trade "Project link")
+# Frontend part of [apix.trade](//apix.trade "Project link")
 
 ## Project setup
 You will need installed [node.js](https://nodejs.org/en/) and [yarn](https://yarnpkg.com/getting-started/install)
