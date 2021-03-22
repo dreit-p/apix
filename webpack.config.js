@@ -8,7 +8,6 @@ module.exports = {
 		filename: '[name].js',
 	},
 	plugins: [
-		new require('dotenv-webpack'),
 		new webpack.EnvironmentPlugin(['NODE_ENV', 'API_HOST'])
 	],
 	module: {

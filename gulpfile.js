@@ -235,27 +235,27 @@ function generateCritical() {
 }
 
 function watchAll() {
-	watch([path.watch.html], series(html, watcher(cb)=>{
+	watch([path.watch.html], series(html, (cb)=>{
 		cb()
 		console.log("changed html");
 	}));
-	watch([path.watch.css], series(css, watcher(cb)=>{
+	watch([path.watch.css], series(css, (cb)=>{
 		cb()
 		console.log("changed css");
 	}));
-	watch([path.watch.js], series(js, watcher(cb)=>{
+	watch([path.watch.js], series(js, (cb)=>{
 		cb()
 		console.log("changed js");
 	}));
-	watch([path.watch.img], series(img, watcher(cb)=>{
+	watch([path.watch.img], series(img, (cb)=>{
 		cb()
 		console.log("changed img");
 	}));
-	watch([path.watch.svg], series(svg, html, watcher(cb)=>{
+	watch([path.watch.svg], series(svg, html, (cb)=>{
 		cb()
 		console.log("changed svg");
 	}));
-	watch([path.watch.fonts], series(fonts, watcher(cb)=>{
+	watch([path.watch.fonts], series(fonts, (cb)=>{
 		cb()
 		console.log("changed fonts");
 	}));
