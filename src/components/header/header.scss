@@ -1,3 +1,9 @@
+
+// this header offset uses when the header is sticking at scrolling.
+// example of implemintation:
+// https://softezza.com/
+// https://github.com/dreit-p/soundstage
+//
 body {
 	--header-offset: 85px;
 	@media (max-width: 950px) {
@@ -88,69 +94,72 @@ header.main-header {
 			white-space: nowrap;
 		}
 	}
-	.menu-btn {
-		flex-shrink: 0;
-		width: 60px;
-		height: 60px;
-		margin-right: -15px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		position: relative;
-		.action {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			margin: auto;
-			cursor: pointer;
-			display: none;
-			z-index: 1;
-			&.hamburger {
-				display: block;
-			}
-		}
-		.overflow {
-			position: relative;
-			overflow: hidden;
-			height: 21px;
-			width: 31px;
-		}
-		.lines {
-			width: 150%;
-			position: absolute;
-			right: 0;
-			left: 50%;
-			top: 0;
-			bottom: 0;
-			margin: auto;
-			transform: translateX(-50%);
-		}
-		.line {
-			height: 3.5px;
-			width: 100%;
-			color: var(--text-blue);
-			background-color: currentColor;
-			position: absolute;
-			left: 0;
-			right: 0;
-			top: 0;
-			bottom: 0;
-			margin: auto;
-			transform-origin: center center;
-			transition: transform .3s, opacity .3s;
-			transition-timing-function: ease-out;
-			&:nth-child(1) {
-				transform: translateY(-8px);
-			}
-			&:nth-child(3) {
-				transform: translateY(8px);
-				right: -75%;
-			}
-		}
-	}
 }
+
+
+
+// header.main-header .menu-btn {
+// 	flex-shrink: 0;
+// 	width: 60px;
+// 	height: 60px;
+// 	margin-right: -15px;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	position: relative;
+// 	.action {
+// 		position: absolute;
+// 		top: 0;
+// 		left: 0;
+// 		right: 0;
+// 		bottom: 0;
+// 		margin: auto;
+// 		cursor: pointer;
+// 		display: none;
+// 		z-index: 1;
+// 		&.hamburger {
+// 			display: block;
+// 		}
+// 	}
+// 	.overflow {
+// 		position: relative;
+// 		overflow: hidden;
+// 		height: 21px;
+// 		width: 31px;
+// 	}
+// 	.lines {
+// 		width: 150%;
+// 		position: absolute;
+// 		right: 0;
+// 		left: 50%;
+// 		top: 0;
+// 		bottom: 0;
+// 		margin: auto;
+// 		transform: translateX(-50%);
+// 	}
+// 	.line {
+// 		height: 3.5px;
+// 		width: 100%;
+// 		color: var(--text-blue);
+// 		background-color: currentColor;
+// 		position: absolute;
+// 		left: 0;
+// 		right: 0;
+// 		top: 0;
+// 		bottom: 0;
+// 		margin: auto;
+// 		transform-origin: center center;
+// 		transition: transform .3s, opacity .3s;
+// 		transition-timing-function: ease-out;
+// 		&:nth-child(1) {
+// 			transform: translateY(-8px);
+// 		}
+// 		&:nth-child(3) {
+// 			transform: translateY(8px);
+// 			right: -75%;
+// 		}
+// 	}
+// }
 
 .show-modal .main-header {
 	box-shadow: none !important;
