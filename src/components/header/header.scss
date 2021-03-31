@@ -26,9 +26,9 @@ header.main-header {
 	right: 0;
 	width: 100%;
 	z-index: 20;
-	background-color: white;
+	background-color: transparent;
 	&.unsticked {
-		box-shadow: 2px 4px 16px 0 rgba(64, 64, 64, 0.16);
+		background-color: #212429;
 	}
 	.limit {
 		--max-width: 1775px;
