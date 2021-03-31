@@ -91,7 +91,10 @@ var processors = [
 	autoprefixer(),
 	modernCSS({
 		importFrom: ['./src/vars.css'],
-		preserve: false
+		preserve: false,
+		features: {
+			'double-position-gradients': false
+		}
 	}),
 	short(),
 	mixins(),
