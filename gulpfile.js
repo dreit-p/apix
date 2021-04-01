@@ -87,7 +87,6 @@ var path = {
 };
 
 var processors = [
-	comments(),
 	autoprefixer(),
 	modernCSS({
 		importFrom: ['./src/vars.css'],
@@ -124,8 +123,9 @@ function css() {
 			postCssImport({
 				root: "src/css",
 				path: ["../css", "../css/components", "../css/data"]
-			})
-		]), {syntax: scss})
+			}),
+			comments(),
+		], {syntax: scss}))
 		.pipe(cache('css'))
 		.pipe(postcss(processors, {syntax: scss}))
 		.pipe(rename({ extname: ".css" }))
